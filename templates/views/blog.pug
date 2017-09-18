@@ -3,8 +3,7 @@ extends ../layouts/default
 include ../mixins/post
 block content
 	.page-header
-		a(href='/keystone/posts?new').btn.btn-default.pull-right= user ? 'Write Post' : 'Sign in to Write Post'
-		h1=category ? category.name : 'Blog'
+		h1=category ? category.name : '博客'
 	.row
 		.col-sm-8
 			if filters.category && !category
@@ -43,7 +42,7 @@ block content
 							h3(style="margin-bottom:0;margin-top:0;") No posts in the category #{category.name}.
 					else
 						.jumbotron.text-center
-							h3(style="margin-bottom:0;margin-top:0;") There are no posts yet.
+							h3(style="margin-bottom:0;margin-top:0;") 暂无数据哦...
 		.col-sm-4
 			if categories.length
 				.lead.text-muted Categories

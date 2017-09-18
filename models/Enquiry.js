@@ -10,9 +10,9 @@ Enquiry.add({
 	email: { type: Types.Email, required: true },
 	phone: { type: String },
 	enquiryType: { type: Types.Select, options: [
-		{ value: 'message', label: "Just leaving a message" },
-		{ value: 'question', label: "I've got a question" },
-		{ value: 'other', label: "Something else..." },
+		{ value: 'message', label: "只是想留个言" },
+		{ value: 'question', label: "有个问题想问" },
+		{ value: 'other', label: "其它..." },
 	], required: true },
 	message: { type: Types.Textarea, required: true },
 });
