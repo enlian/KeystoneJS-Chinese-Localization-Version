@@ -6,6 +6,7 @@ lib-cov
 *.out
 *.pid
 *.gz
+.env
 
 *.min.css
 
@@ -19,8 +20,6 @@ npm-debug.log
 node_modules
 ACCOUNTS
 
-.env
+
 /.idea
-/.env
-/.env
-/.env
+
