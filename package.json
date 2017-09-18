@@ -1,0 +1,21 @@
+{
+  "name": "keystone-demo",
+  "version": "1.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JedWatson/keystone-demo.git"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "csv": "^0.4.6",
+    "keystone": "^4.0.0-beta.5",
+    "lodash": "^4.17.4",
+    "pug": "^2.0.0-beta11",
+    "dotenv": "4.0.0"
+  },
+  "scripts": {
+    "pro": "set NODE_ENV=production&&node keystone.js",
+    "dev": "set NODE_ENV=development&&node keystone.js"
+  }
+}
