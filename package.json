@@ -1,10 +1,10 @@
 {
-  "name": "keystone-demo",
+  "name": "keystone-zh",
   "version": "1.0.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/JedWatson/keystone-demo.git"
+    "url": "https://github.com/enlian/keystone.git"
   },
   "dependencies": {
     "async": "^2.1.4",
