@@ -1,32 +1,41 @@
 extends ../layouts/default
 
 block css
-	link(rel="stylesheet", href="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css")
-				
-block content
-	.page-header
-		h1 画廊
+    link(rel="stylesheet", href="https://cdn.bootcss.com/fancybox/2.1.7/css/jquery.fancybox.min.css")
 
-	if galleries.length
-		each gallery, i in galleries
-			h3
-				| #{gallery.name} 
-				small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
-			
-			.row
-				each image, i in gallery.images
-					.col-xs-4.col-sm-3.col-md-2(style="margin-bottom: 30px;")
-						a(href=image.limit(900,600), title=gallery.name + ' image ' + (i+1), rel=gallery.key).gallery-image
-							img(src=image.fill(300,300), alt=gallery.name + ' image ' + (i+1)).img-thumbnail
-		
-	else
-		.jumbotron.text-center
-			h3(style="margin-bottom:0;margin-top:0;") 暂无数据哦...
+block content
+    .page-header
+        h1 画廊
+
+    if galleries.length
+        each gallery, i in galleries
+            h3
+                | #{gallery.name}
+                small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
+
+            .row
+                each image, i in gallery.images
+                    .col-xs-4.col-sm-3.col-md-2(style="margin-bottom: 30px;")
+                        a(href=image.limit(900, 600), title=gallery.name + ' / ' + (i + 1), rel='group' + gallery.key).gallery-image
+                            img(src=image.fill(300, 300), alt=gallery.name + ' / ' + (i + 1)).img-thumbnail
+
+    else
+        .jumbotron.text-center
+            h3(style="margin-bottom:0;margin-top:0;") 暂无数据哦...
+
 
 
 block page-js
-	script(src="https://cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js")
-	script.
-		jQuery(function($) {
-			$('.gallery-image').fancybox();
-		});
+    script(src="https://cdn.bootcss.com/fancybox/2.1.7/js/jquery.fancybox.min.js")
+    script.
+      jQuery(function ($) {
+        $('.gallery-image').fancybox({
+          prevEffect: 'none',
+          nextEffect: 'none',
+          closeBtn: false,
+          helpers: {
+            title: {type: 'inside'},
+            buttons: {}
+          }
+        });
+      });
