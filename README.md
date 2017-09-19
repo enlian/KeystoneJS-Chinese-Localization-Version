@@ -29,7 +29,6 @@ MONGO_URI=您的mongodb地址/用户名
 
 
 
-- 运行
 
 - 开发：npm run dev
 
