@@ -16,7 +16,7 @@ keystoneJS是一个非常好用的纯JS语言的CMS框架，
 
 - 跑起mongodb服务
 
-- 在根目录下新建.env文件，填上您的mongodb信息
+- 在根目录下新建.env文件，填上下列信息
 
  
 ```
