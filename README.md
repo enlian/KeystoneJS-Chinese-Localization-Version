@@ -11,16 +11,21 @@
 持续更新中...欢迎有兴趣的童鞋star，谢谢！
 
 # 部署
-安装：npm i
 
-在根目录下新建.env文件，填上您的mongodb信息
+1.安装：npm i
 
-COOKIE_SECRET=
+2.跑起mongodb服务
 
-CLOUDINARY_URL=
+3.在根目录下新建.env文件，填上您的mongodb信息
 
-MONGO_URI=
+ COOKIE_SECRET=随机字符串
 
+ CLOUDINARY_URL=云图片url
+
+ MONGO_URI=您的mongodb地址/用户名
+
+
+3.运行
 
 开发：npm run dev
 
