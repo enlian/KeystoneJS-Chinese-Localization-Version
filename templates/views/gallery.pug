@@ -11,7 +11,8 @@ block content
         each gallery, i in galleries
             h3
                 | #{gallery.name}
-                small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
+                small.text-muted
+                    |  #{gallery._.publishedDate.format('YYYY/MM/DD')}
 
             .row
                 each image, i in gallery.images

@@ -11,9 +11,8 @@ mixin post(post)
 				a(href='/blog/post/' + post.key)= post.name
 			if post.publishedDate || post.author
 				p.text-muted.text-small
-					if post.publishedDate
-						time= post._.publishedDate.format('MMMM Do, YYYY')
-						|  
 					if post.author
-						span by #{post.author.name.full}
+						span #{post.author.name.full} 写于
+					if post.publishedDate
+						time= post._.publishedDate.format('YYYY-MM-DD')
 			!= post.content.brief

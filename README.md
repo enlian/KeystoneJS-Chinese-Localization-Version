@@ -1,17 +1,26 @@
-# 基于keystoneJS二次开发的CMS
+# keystoneJS汉化版
 
-描述：基于 keystoneJS 高度定制，二次开发
+描述：keystoneJS是一个非常好用的纯JS语言的CMS框架，
+
+让有JS基础的前端工程师也能很快的搭建一个CMS系统，
+
+做一个简单的企业网站或者博客站非常方便，我根据官方的DEMO做了汉化，
+
+轻度二次开发，替换了谷歌字体，基础libs使用CDN，让它更适应我们国内环境。
+
+持续更新中...欢迎有兴趣的童鞋star，谢谢！
 
 # 部署
 安装：npm i
 
-新建.env文件，填上您的mongodb信息
+在根目录下新建.env文件，填上您的mongodb信息
 
 COOKIE_SECRET=
 
 CLOUDINARY_URL=
 
 MONGO_URI=
+
 
 开发：npm run dev
 

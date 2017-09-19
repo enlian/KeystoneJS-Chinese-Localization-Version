@@ -28,7 +28,7 @@ block content
 						label.col-sm-2.control-label 期望
 						.col-sm-10
 							select(name='enquiryType').form-control
-								option(value='') (必填)
+								//option(value='') (必填)
 								each type in enquiryTypes
 									option(value=type.value selected=formData.enquiryType === type.value)= type.label
 					.form-group(class=validationErrors.message ? 'has-error' : null)
@@ -37,4 +37,4 @@ block content
 							textarea(name='message' placeholder='写下您想说的话吧...' rows=4 required).form-control= formData.message
 					.form-group
 						.col-sm-10.col-sm-offset-2
-							button(type='submit').btn.btn-primary Submit
+							button(type='submit').btn.btn-primary 提交

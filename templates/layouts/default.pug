@@ -45,7 +45,7 @@ html
 										li(class=currentTheme === theme ? 'active' : '')
 											a(href='?theme=' + theme)= theme
 						if user
-							li: a(href='/keystone') Admin UI
+							li: a(href='/keystone') 后台
 							li: a(href='/keystone/signout') 登出
 						else
 							li: a(href='/keystone/signin') 登录
