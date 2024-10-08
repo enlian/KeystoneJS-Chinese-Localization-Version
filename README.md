@@ -1,38 +1,63 @@
-# keystoneJS汉化版
 
-keystoneJS是一个非常好用的纯JS语言的CMS框架，
+# KeystoneJS Chinese Localization Version
 
-让有JS基础的前端工程师也能很快的搭建一个CMS系统，
+KeystoneJS is a very user-friendly CMS framework built entirely with JavaScript. It allows frontend developers with a basic knowledge of JavaScript to quickly set up a CMS system. Whether you want to create a simple business website or a blog, KeystoneJS makes it very convenient. I have localized the official demo into Chinese, made light modifications, replaced Google Fonts, and used CDN for essential libraries to make it more suitable for the local environment.
 
-做一个简单的企业网站或者博客站非常方便，我根据官方的DEMO做了汉化，
+**Continuous updates... If you're interested, feel free to star the project!**
 
-  **轻度二次开发，替换了谷歌字体，基础libs使用CDN，让它更适应我们国内环境。**
+## Features
 
-持续更新中...欢迎有兴趣的童鞋star，谢谢！
+- **Chinese Localization**: Translated version of the official KeystoneJS demo into Chinese
+- **Light Customization**: Google Fonts have been replaced, and essential libraries are loaded via domestic CDN
+- **Optimized for Local Environment**: Better support for local usage, minimizing reliance on overseas resources
+- **Frontend-Friendly**: Perfect for frontend developers with a JavaScript background
 
-# 部署
+## Deployment
 
-- 安装：npm i
+### 1. Install Dependencies
 
-- 跑起mongodb服务
+To install the project dependencies, run:
 
-- 在根目录下新建.env文件，填上下列信息
-
- 
-```
-COOKIE_SECRET=随机字符串
-
-CLOUDINARY_URL=云图片url
-
-MONGO_URI=您的mongodb地址/用户名
+```bash
+npm i
 ```
 
+### 2. Start MongoDB Service
 
+Ensure MongoDB is running, and keep the connection URI handy.
 
+### 3. Configure Environment Variables
 
-- 开发：npm run dev
+In the project root directory, create a `.env` file and add the following information:
 
-- 生产：npm run pro
+```bash
+COOKIE_SECRET=your-random-string
+CLOUDINARY_URL=your-cloudinary-url
+MONGO_URI=your-mongodb-connection-string
+```
 
+### 4. Run Development Server
 
-有更多安装部署方面的问题可以参考 [keystoneJS官方文档](http://keystonejs.com/zh/docs/getting-started/)
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+This will launch the project in development mode.
+
+### 5. Run Production Server
+
+To build and run the project in production mode, run:
+
+```bash
+npm run pro
+```
+
+## More Information
+
+For more details on installation and deployment, refer to the official KeystoneJS documentation.
+
+---
+
+**Continuous Updates...** If you find this project helpful, feel free to give it a star! Thank you!
